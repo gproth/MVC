@@ -1,11 +1,11 @@
 package edu.elon.math;
 
 public class CalcController implements CalcControlInterface {
-	private CalcModel model;
+	private CalcModelInterface model;
 	
-	private CalcGui gui;
+	private Display gui;
 	
-	public CalcController(CalcModel model){
+	public CalcController(CalcModelInterface model){
 		this.model = model;
 		
 		gui = new CalcGui(this, model);

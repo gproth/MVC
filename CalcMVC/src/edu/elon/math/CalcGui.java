@@ -15,10 +15,10 @@ public class CalcGui extends JFrame implements Display{
 	private JFrame frame;
 	private JPanel buttonPanel;
 	private JTextField displayField;
-	private CalcModel model;
-	private CalcController control;
+	private CalcModelInterface model;
+	private CalcControlInterface control;
 
-	public CalcGui(CalcController c, CalcModel m){
+	public CalcGui(CalcControlInterface c, CalcModelInterface m){
 		control = c;
 		model = m;
 		model.addObserver(this);
