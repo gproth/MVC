@@ -7,7 +7,7 @@ public class CalcModel implements CalcModelInterface {
 	private String input;
 	private String op;
 	private boolean isResult;
-	private ArrayList<Observer> observers = new ArrayList<Observer>();
+	private ArrayList<Display> Displays = new ArrayList<Display>();
 	
 	
 	public CalcModel(){
@@ -60,20 +60,20 @@ public class CalcModel implements CalcModelInterface {
 	}
 
 	@Override
-	public void addObserver(Observer o) {
-		observers.add(o);
+	public void addObserver(Display o) {
+		Displays.add(o);
 		
 	}
 
 	@Override
-	public void removeObserver(Observer o) {
-		observers.remove(o);
+	public void removeObserver(Display o) {
+		Displays.remove(o);
 		
 	}
 
 	@Override
 	public void notifyObservers(String out) {
-		for(Observer o : observers){
+		for(Display o : Displays){
 			o.update(out);
 		}
 		

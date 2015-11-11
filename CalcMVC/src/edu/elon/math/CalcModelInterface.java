@@ -12,9 +12,9 @@ public interface CalcModelInterface {
 	
 	public void setDecimal(String in);
 	
-	public void addObserver(Observer o);
+	public void addObserver(Display o);
 	
-	public void removeObserver(Observer o);
+	public void removeObserver(Display o);
 	
 	public void notifyObservers(String op);
 }

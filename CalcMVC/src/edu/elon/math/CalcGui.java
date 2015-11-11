@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class CalcGui extends JFrame implements Observer{
+public class CalcGui extends JFrame implements Display{
 	private JFrame frame;
 	private JPanel buttonPanel;
 	private JTextField displayField;
