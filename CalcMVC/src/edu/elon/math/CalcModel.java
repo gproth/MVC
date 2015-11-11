@@ -2,7 +2,7 @@ package edu.elon.math;
 
 import java.util.ArrayList;
 
-public class CalcModel implements Subject, CalcModelInterface {
+public class CalcModel implements CalcModelInterface {
 	private double total;
 	private String input;
 	private String op;
