@@ -20,7 +20,7 @@ public class CalcController implements CalcControlInterface {
 
 	@Override
 	public void updateIn(String in) {
-		if(in == "."){
+		if(in.equals(".")){
 			System.out.println("hi");
 			model.setDecimal(in);
 		}else{
